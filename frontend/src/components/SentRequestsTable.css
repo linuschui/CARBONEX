@@ -1,0 +1,114 @@
+.dashboard-requests-inner-container {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-requests-table-container {
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.dashboard-requests-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dashboard-requests-table-container thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.dashboard-requests-table-container th {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    background: #f7fafc;
+    color: #4a5568;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.dashboard-requests-table-container td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    color: white;
+    font-size: 14px;
+}
+
+.badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge.buy {
+    background: #c6f6d5;
+    color: #22543d;
+}
+
+.badge.sell {
+    background: #fed7d7;
+    color: #742a2a;
+}
+
+
+.badge.pending {
+    background: #f5f6c6;
+    color: #545422;
+}
+
+.badge.deleted {
+    background: #fed7fc;
+    color: #742a6f;
+}
+
+.badge.accepted {
+    background: #f8dfbe;
+    color: #82622c;
+}
+
+.badge.rejected {
+    background: #d7ecfe;
+    color: #2a4f74;
+}
+
+.action-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: all 0.3s;
+}
+
+.action-btn.edit {
+    background: #bef8f7;
+    color: #2c827f;
+}
+
+.action-btn.edit:hover {
+    background: #90cdf4;
+}
+
+.action-btn.delete {
+    background: #fed7d7;
+    color: #742a2a;
+}
+
+.action-btn.delete:hover {
+    background: #fc8181;
+}
+
+.action-btn.delete:disabled {
+    background: rgb(255, 222, 222);
+    cursor: not-allowed;
+}

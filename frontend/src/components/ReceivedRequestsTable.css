@@ -1,0 +1,108 @@
+.received-requests-inner-container {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.received-requests-table-container {
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+/* header visible, table scrolls internally */
+
+.received-requests-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* make table header sticky */
+.received-requests-table-container thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.received-requests-table-container th {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    background: #f7fafc;
+    color: #4a5568;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.received-requests-table-container td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    color: white;
+    font-size: 14px;
+}
+
+.badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge.buy {
+    background: #c6f6d5;
+    color: #22543d;
+}
+
+.badge.sell {
+    background: #fed7d7;
+    color: #742a2a;
+}
+
+
+.badge.pending {
+    background: #f6e1c6;
+    color: #544222;
+}
+
+.badge.deleted {
+    background: #fed7fc;
+    color: #742a6f;
+}
+
+.badge.overdue {
+    background: #d7d8fe;
+    color: #312a74;
+    margin-left: 5px;
+}
+
+.action-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: all 0.3s;
+}
+
+.action-btn.accept {
+    background: #f8dfbe;
+    color: #82622c;
+}
+
+.action-btn.accept:hover {
+    background: #f4cc90;
+}
+
+.action-btn.reject {
+    background: #fed7f6;
+    color: #742a69;
+}
+
+.action-btn.reject:hover {
+    background: #fc81f6;
+}

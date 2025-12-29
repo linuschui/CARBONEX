@@ -1,0 +1,215 @@
+/* Initial state when entering */
+.form-enter {
+    opacity: 0;
+}
+
+/* Active state while entering */
+.form-enter-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+/* Initial state when exiting */
+.form-exit {
+    opacity: 1;
+}
+
+/* Active state while exiting */
+.form-exit-active {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url("../images/mbfc.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.login-card {
+	background: #fafafa;
+	padding: 20px 40px 20px 40px;
+	border-radius: 12px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	max-width: 450px;
+	height: clamp(400px, 80vh, 1000px);
+}
+
+.login-logo {
+	width: 300px;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.form-group label {
+	color: #2d3748;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.form-group input {
+	padding: 12px;
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	font-size: 14px;
+	transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+	outline: none;
+	border-color: #667eea;
+}
+
+.error-message {
+	background: #fed7d7;
+	color: #c53030;
+	padding: 12px;
+	border-radius: 8px;
+	font-size: 14px;
+}
+
+.success-message {
+	background: #ddfed7;
+	color: #5fc530;
+	padding: 12px;
+	border-radius: 8px;
+	font-size: 14px;
+}
+
+
+.login-button {
+	background: #fafafa;
+	color: black;
+	padding: 14px;
+	border: 2px solid black;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 2s ease-out;
+}
+
+.login-button:hover {
+	background-color: black;
+    color: white
+}
+
+.login-button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.register-button {
+	background: #fafafa;
+	color: black;
+	padding: 14px;
+    border: 2px solid black;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 2s ease-out;
+}
+
+.register-button:hover {
+	background-color: black;
+    color: white
+}
+
+.register-button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.register-bottom-container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.register-button2 {
+	flex: 1;
+	max-width: 100%;
+	background: #fafafa;
+	color: black;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	padding: 14px;
+	cursor: pointer;
+	transition: background-color 2s ease-out;
+}
+
+.register-button2:hover {
+    background-color: black;
+    color: white
+}
+
+.login-bottom-container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.login-button2 {
+	flex: 1;
+	max-width: 200px;
+	background: #fafafa;
+	color: black;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	padding: 14px;
+	cursor: pointer;
+	transition: background-color 2s ease-out;
+}
+
+.login-button2:hover {
+    background-color: black;
+    color: white
+}
+
+.demo-credentials {
+	margin-top: 20px;
+	padding: 16px;
+	background: #f7fafc;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.demo-credentials p {
+	color: #4a5568;
+	font-family: "Montserrat", sans-serif;
+	font-size: 13px;
+	margin: 4px 0;
+}
+
+.demo-credentials p:first-child {
+	font-weight: 600;
+	margin-bottom: 8px;
+}

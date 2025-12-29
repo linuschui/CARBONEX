@@ -1,0 +1,106 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+}
+
+.requests-container {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    min-height: calc(100vh - 100px);
+    height: calc(100vh - 100px);
+}
+
+.requests-requests-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.requests-subheader-container {
+    display: flex;
+}
+
+.requests-subheader-container p {
+    font-size: 24pt;
+    font-family: "Tinos", serif;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.requests-requests-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.accept-request-btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 2px solid #66ea85;
+    background: transparent;
+    color: #66ea85;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 2s ease-out;
+}
+
+.accept-request-btn:hover {
+    background-color: #66ea85;
+    color: black;
+}
+
+.accept-request-icon {
+    margin-right: 5px;
+    transition: all 2s ease-out;
+}
+
+.accept-request-button:hover .accept-request-icon {
+    color: #66ea85;
+    background-color: black;
+}
+
+.reject-request-btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 2px solid #ea6666;
+    background: transparent;
+    color: #ea6666;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 2s ease-out;
+}
+
+.reject-request-btn:hover {
+    background-color: #ea6666;
+    color: black;
+}
+
+.reject-request-icon {
+    margin-right: 5px;
+    transition: all 2s ease-out;
+}
+
+.reject-request-button:hover .reject-request-icon {
+    color: #ea6666;
+    background-color: black;
+}
+
+.requests-table-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+

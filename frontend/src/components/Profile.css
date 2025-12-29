@@ -1,0 +1,46 @@
+.dashboard-profile-container {
+    display: flex;
+    flex-direction: row;
+    border-left: 3px solid white;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.dashboard-datetime-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-user {
+    font-family: 'BBH Bogle', sans-serif;
+    font-size: 20pt;
+    color: white;
+    margin-top: 220px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.dashboard-time {
+    font-family: "DM Serif Text", serif;
+    font-weight: 600;
+    font-size: 30pt;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.dashboard-clock-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-clock {
+    background-color: black;
+    border-color: white;
+    border-width: 5px !important;
+}

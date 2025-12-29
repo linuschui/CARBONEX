@@ -1,0 +1,4 @@
+.dashboard-balance-container {
+    display: flex;
+    flex-direction: column;
+}

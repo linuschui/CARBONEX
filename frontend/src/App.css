@@ -1,0 +1,7 @@
+.app-container {
+  width: 100%;
+  background-image: url("./images/dbs.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
