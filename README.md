@@ -2,8 +2,6 @@
 
 A full-stack web application for trading carbon credits between companies, built for DBS TechTrek 2026 Hackathon.
 
-**🆕 Now uses Sequelize ORM for better code organization!** See [SEQUELIZE_SETUP.md](SEQUELIZE_SETUP.md) for details.
-
 ## 🚀 Features
 
 ### Implemented Requirements
