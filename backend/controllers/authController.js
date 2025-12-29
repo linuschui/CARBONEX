@@ -23,14 +23,23 @@ exports.login = async (req, res) => {
             })
         }
 
-        // for demo : allow default password
-        const isValid = password === "password123"
-        if (!isValid) {
+        let hashValid = await bcrypt.compare(password, company.password_hash)
+
+        console.log(hashValid)
+
+        // for demo
+        if (password === "password123") {
+            hashValid = true
+        }
+
+        console.log(hashValid)
+
+
+        if (!hashValid) {
             return res.status(401).json({
                 error: "❌ Invalid Credentials"
             })
         }
-
         const token = jwt.sign(
             {
                 companyId: company.company_id,
